@@ -1,0 +1,50 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+.navDx{
+    background-color: #000;
+    width: 20%;
+    height: 100vh;
+    padding: 1%;
+    color: #fff;
+}
+
+.friendsActivity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    margin: 3% 0;
+}
+
+.friendsActivity h6{
+    margin: 0;
+}
+
+.myFriend{
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+}
+.account{
+    width: 100%;
+    padding: 0 3%;
+    color: #ADACAD;
+}
+
+.account p{
+    margin: 2px 0;
+}
+
+.accountPic{
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.accountName{
+    display: flex;
+    justify-content: space-between;
+}
