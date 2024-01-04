@@ -94,7 +94,7 @@ const getToArtist = (id) => {
   window.location.assign("./artist.html?Id=" + id);
   };
 
-// funzione per popolare la scatola delle canzoni
+// funzione per popolare la box delle canzoni
 function popolaCanzoni(artista) {
   let boxSongs = document.getElementById("boxSongs");
   boxSongs.innerHTML = "";
@@ -119,6 +119,7 @@ function createCardSongs(album, artist, contributors, tracklist) {
   tracklist.forEach((element, index) => {
     let durationInSeconds = element.duration;
     let formattedDuration = secondsToMinutes(durationInSeconds);
+    
 // funzione per cambiare l'aspetto della durata di ogni canzone
     function secondsToMinutes(durationInSeconds) {
       const minutes = Math.floor(durationInSeconds / 60);

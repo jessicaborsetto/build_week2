@@ -52,13 +52,13 @@ const getToArtist = id => {
     };
     
 
-// Execute a function when the user presses a key on the keyboard
+// esegui la funzione quando viene premuto il tasto nella tastiera
 searchInput.addEventListener("keypress", function(event) {
-  // If the user presses the "Enter" key on the keyboard
+  // se si pressa ENTER
   if (event.key === "Enter") {
-    // Cancel the default action, if needed
+    // cancella l'azione di default
     event.preventDefault();
-    // Trigger the button element with a click
+    // triggera il bottone
     document.getElementById("search-button").click();
   }
 });

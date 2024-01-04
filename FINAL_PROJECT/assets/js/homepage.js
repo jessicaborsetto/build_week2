@@ -23,7 +23,7 @@ function getRandomArtists(count) {
 }
 
 function displayRandomArtists() {
-  const randomArtists = getRandomArtists(20); // Visualizzeremo 5 artisti
+  const randomArtists = getRandomArtists(20); 
   const collectionContainer = document.querySelector('.collection'); // Seleziona l'elemento con la classe 'collection'
 
   randomArtists.forEach(artistId => {
@@ -42,8 +42,8 @@ function displayRandomArtists() {
 
 function createArtistCard(artistData) {
   const cardContainer = document.createElement('div');
-  cardContainer.classList.add('card', 'trend', 'p-3', 'sm-6', 'col-12', 'col-md-4', 'col-lg-3');
-  cardContainer.style.width = '12rem'; // Imposta la larghezza desiderata
+  cardContainer.classList.add('card', 'trend', 'p-3', 'sm-6', 'col-12', 'col-md-4', 'col-lg-3', 'my-2');
+  cardContainer.style.width = '12rem';
   cardContainer.onclick = function(){
     return getToArtistPage(artistData.id);
  }
